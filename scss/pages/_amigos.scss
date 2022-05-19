@@ -1,0 +1,15 @@
+@import '../base/extends';
+
+.main{
+    @extend %flex;
+    width: 75%;
+
+    .amigos{
+        background-color: blanchedalmond;
+       
+        .titulo-amigos{
+            color: crimson;
+            font-family: 'Lobster', cursive;
+        }
+    }
+}

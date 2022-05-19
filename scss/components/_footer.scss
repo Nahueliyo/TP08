@@ -1,0 +1,93 @@
+.footer{
+    width: 100%;
+    background-color: blanchedalmond;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: footer;
+
+    .newsletter{
+        font-size: 24px;
+        padding: 5px;
+
+        .titulo-newsletter{
+            font-size: 20px;
+        }
+
+        .label-input-mail{
+            font-size: 14px;
+        }
+        .input-mail{
+            font-size: 14px;
+            font-weight: bold;
+            
+        }
+        
+            .boton-newsletter{
+                margin-left: 2px;
+                margin-top: 3px;
+                padding: 2px;
+                height: 25px;
+                width: 60px;
+                border: 2px solid black;
+                font-size: 14px;
+                text-align: center;
+                border-radius: 3px;
+            }
+        
+    }
+
+    .redes{
+        display: flex;
+        padding: 10px 30px;
+        justify-content: center;
+        .red{
+            margin: 10px;
+
+            @media screen and (max-width:425px){
+                display: none;
+            }
+        }
+        .lista-red-mobile{
+            list-style: none;
+            text-decoration: none;
+            text-align: center;
+
+            .parrafo-red-mobile{
+                font-weight: bold;
+            }
+            .red-mobile{
+            display: block;
+            text-decoration: none;
+            color: blue;
+            font-weight: lighter;
+            font-weight: 50;
+            }
+            @media screen and (min-width: 428px){
+                display:none;
+        }
+       }
+    }
+
+    .mas{
+        display: flex;
+        align-items: center;
+        display: block;
+        margin-top: 20px;
+        .envios{
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .parrafo-envios{
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width:425px){
+            display: none;}
+    }
+}

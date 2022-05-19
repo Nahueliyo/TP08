@@ -1,0 +1,22 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mapas';
+
+ .carrusel-foto{
+     height: 60vh;
+     width: 100vh;
+ }
+
+.whatsapp{
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+    z-index: 3;
+
+    @media screen and (max-width:425px){
+        display: none;
+    }
+}
+
+
+

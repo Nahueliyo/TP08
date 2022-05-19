@@ -1,0 +1,29 @@
+.preguntas-frecuentes{
+    justify-content: center;
+    font-size: 4vh;
+}
+.pregunta{
+    color: black;
+    text-decoration: none;
+    font-size: 3vh;
+}
+.collapse{
+    font-size: 2vh;
+}
+.respuesta{
+    font-size: 2vh;
+}
+
+
+.container{
+    .sugerencia-pregunta{
+        font-size: 3vh;
+        font-weight: bold;
+    }
+    .boton-sugerencia{
+        background-color: map-get($boton, bg-boton);
+        border-radius: map-get($boton, radio-borde);
+        padding: map-get($boton, padding);
+        border-color: #4cae4c;;
+    }
+}

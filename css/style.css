@@ -1,0 +1,314 @@
+/* Nesting */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(../assets/fondo-ceramica.jpg);
+  background-size: cover;
+}
+body footer {
+  margin-top: auto;
+}
+
+/*Boton*/
+/* key - value (valor) */
+header {
+  font-size: 20px;
+  background-color: blanchedalmond;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+  display: inline-block;
+  width: 100%;
+}
+header .zona-navegable {
+  width: 50%;
+  display: inline;
+}
+header .zona-navegable .lista-navegable {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+header .zona-navegable .lista-navegable .item-lista-nav {
+  background-color: #5cb85c;
+  border-radius: 3px;
+  padding: 5px;
+}
+header .zona-navegable .lista-navegable .item-lista-nav .boton {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+header .zona-navegable .lista-navegable .item-lista-nav:hover {
+  transform: scale(1.5);
+  transition: all 1s;
+}
+@media screen and (max-width: 425px) {
+  header .zona-navegable .lista-navegable {
+    display: none;
+  }
+}
+header .zona-navegable .seccion-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .zona-navegable .seccion-mobile .menu-desplegable {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  border-radius: 3px;
+  margin-left: 3px;
+}
+header .zona-navegable .seccion-mobile .menu-desplegable .dropdown-item:hover {
+  background-color: #49fa49;
+}
+header .zona-navegable .seccion-mobile h1 {
+  font-size: 5vh;
+  margin-right: 4vh;
+  color: crimson;
+  font-family: "Lobster", cursive;
+}
+@media screen and (min-width: 428px) {
+  header .zona-navegable .seccion-mobile {
+    display: none;
+  }
+}
+
+/*Boton*/
+/* key - value (valor) */
+.carrusel-foto {
+  height: 60vh;
+  width: 100vh;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  z-index: 3;
+}
+@media screen and (max-width: 425px) {
+  .whatsapp {
+    display: none;
+  }
+}
+
+.footer {
+  width: 100%;
+  background-color: blanchedalmond;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-area: footer;
+}
+.footer .newsletter {
+  font-size: 24px;
+  padding: 5px;
+}
+.footer .newsletter .titulo-newsletter {
+  font-size: 20px;
+}
+.footer .newsletter .label-input-mail {
+  font-size: 14px;
+}
+.footer .newsletter .input-mail {
+  font-size: 14px;
+  font-weight: bold;
+}
+.footer .newsletter .boton-newsletter {
+  margin-left: 2px;
+  margin-top: 3px;
+  padding: 2px;
+  height: 25px;
+  width: 60px;
+  border: 2px solid black;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 3px;
+}
+.footer .redes {
+  display: flex;
+  padding: 10px 30px;
+  justify-content: center;
+}
+.footer .redes .red {
+  margin: 10px;
+}
+@media screen and (max-width: 425px) {
+  .footer .redes .red {
+    display: none;
+  }
+}
+.footer .redes .lista-red-mobile {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+}
+.footer .redes .lista-red-mobile .parrafo-red-mobile {
+  font-weight: bold;
+}
+.footer .redes .lista-red-mobile .red-mobile {
+  display: block;
+  text-decoration: none;
+  color: blue;
+  font-weight: lighter;
+  font-weight: 50;
+}
+@media screen and (min-width: 428px) {
+  .footer .redes .lista-red-mobile {
+    display: none;
+  }
+}
+.footer .mas {
+  display: flex;
+  align-items: center;
+  display: block;
+  margin-top: 20px;
+}
+.footer .mas .envios {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+.footer .mas .parrafo-envios {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 425px) {
+  .footer .mas {
+    display: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Boton*/
+/* key - value (valor) */
+/*Animate.css*/
+.animate__fadeInDown {
+  --animate-duration: 3s;
+}
+
+.animate__fadeInUp {
+  --animate-duration: 3s;
+}
+
+.animate__zoomIn {
+  --animate-duration: 5s;
+}
+
+.animate__lightSpeedInRight {
+  --animate-duration: 2s;
+}
+
+/*Fin de animate.css*/
+.main, .main-nosotros, .main-contacto {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-contacto .subtitulo-contacto {
+  font-weight: bold;
+}
+.main-contacto .datos-contacto {
+  font-weight: bolder;
+  list-style: none;
+}
+.main-contacto .lista-contacto {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto .lista-contacto .item-contacto {
+  margin: 10px;
+}
+
+.preguntas-frecuentes {
+  justify-content: center;
+  font-size: 4vh;
+}
+
+.pregunta {
+  color: black;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.collapse {
+  font-size: 2vh;
+}
+
+.respuesta {
+  font-size: 2vh;
+}
+
+.container .sugerencia-pregunta {
+  font-size: 3vh;
+  font-weight: bold;
+}
+.container .boton-sugerencia {
+  background-color: #5cb85c;
+  border-radius: 3px;
+  padding: 5px;
+  border-color: #4cae4c;
+}
+
+.main, .main-nosotros, .main-contacto {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-nosotros {
+  width: 60%;
+  background-color: blanchedalmond;
+  border-radius: 5%;
+}
+.main-nosotros .bienvenida-titulo {
+  font-size: 5vh;
+  margin-right: 4vh;
+  color: crimson;
+  font-family: "Lobster", cursive;
+}
+.main-nosotros .parrafo-bienvenida {
+  font-family: Sans;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.main, .main-contacto, .main-nosotros {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  width: 75%;
+}
+.main .amigos {
+  background-color: blanchedalmond;
+}
+.main .amigos .titulo-amigos {
+  color: crimson;
+  font-family: "Lobster", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */

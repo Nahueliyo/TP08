@@ -1,0 +1,19 @@
+@import '../base/mixin';
+@import '../base/extends';
+
+.main-nosotros{
+    @extend %flex;
+    width: 60%;
+    background-color: blanchedalmond;
+    border-radius: 5%;
+
+    .bienvenida-titulo{
+        font-size: 5vh;
+        margin-right: 4vh;
+        color: crimson;
+        font-family: 'Lobster', cursive;
+    }
+    .parrafo-bienvenida{
+        @include texto(Sans, 16px, bold)
+    }
+}

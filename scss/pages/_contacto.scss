@@ -1,0 +1,27 @@
+@import '../base/extends';
+
+.main-contacto{
+    @extend %flex;
+   
+    .subtitulo-contacto{
+        font-weight: bold;
+    }
+
+    .datos-contacto{
+        font-weight: bolder;
+        list-style: none;
+        
+
+    }
+
+    .lista-contacto{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+            .item-contacto{
+                margin: 10px;
+            }
+    }
+
+}

@@ -1,0 +1,15 @@
+/* Nesting */
+@import 'components/body.scss';
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';
+@import 'base/estilos-generales';
+@import 'base/listas';
+@import 'base/mapas';
+@import 'base/animaciones';
+@import 'pages/contacto';
+@import 'pages/preguntas';
+@import 'pages/nosotros';
+@import 'pages/amigos';
+
+

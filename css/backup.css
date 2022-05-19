@@ -1,0 +1,377 @@
+/* Nesting */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/fondo-ceramica.jpg);
+    background-size: cover;
+  }
+  body footer {
+    margin-top: auto;
+  }
+  
+  header {
+    font-size: 20px;
+    background-color: blanchedalmond;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    grid-area: header;
+    display: inline-block;
+    width: 100%;
+  }
+  header .zona-navegable {
+    width: 50%;
+    display: inline;
+  }
+  header .zona-navegable .lista-navegable {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  header .zona-navegable .lista-navegable .item-lista-nav {
+    background-color: #5cb85c;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  header .zona-navegable .lista-navegable .item-lista-nav .boton {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+  }
+  header .zona-navegable .lista-navegable .item-lista-nav:hover {
+    transform: scale(1.5);
+    transition: all 1s;
+  }
+  @media screen and (max-width: 425px) {
+    header .zona-navegable .lista-navegable {
+      display: none;
+    }
+  }
+  header .zona-navegable .seccion-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .zona-navegable .seccion-mobile .menu-desplegable {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+  }
+  header .zona-navegable .seccion-mobile .menu-desplegable .dropdown-item:hover {
+    background-color: #49fa49;
+  }
+  header .zona-navegable .seccion-mobile h1 {
+    font-size: 5vh;
+    margin-right: 4vh;
+    color: crimson;
+    font-family: "Lobster", cursive;
+  }
+  @media screen and (min-width: 428px) {
+    header .zona-navegable .seccion-mobile {
+      display: none;
+    }
+  }
+  
+  .whatsapp {
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+    z-index: 3;
+  }
+  @media screen and (max-width: 425px) {
+    .whatsapp {
+      display: none;
+    }
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: blanchedalmond;
+    padding-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: footer;
+  }
+  .footer .newsletter {
+    font-size: 24px;
+    padding: 5px;
+  }
+  .footer .newsletter .titulo-newsletter {
+    font-size: 20px;
+  }
+  .footer .newsletter .label-input-mail {
+    font-size: 14px;
+  }
+  .footer .newsletter .input-mail {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .footer .newsletter .boton-newsletter {
+    margin-left: 2px;
+    margin-top: 3px;
+    padding: 2px;
+    height: 25px;
+    width: 60px;
+    border: 2px solid black;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  .footer .redes {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: center;
+  }
+  .footer .redes .red {
+    margin: 10px;
+  }
+  @media screen and (max-width: 425px) {
+    .footer .redes .red {
+      display: none;
+    }
+  }
+  .footer .redes .lista-red-mobile {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+  }
+  .footer .redes .lista-red-mobile .parrafo-red-mobile {
+    font-weight: bold;
+  }
+  .footer .redes .lista-red-mobile .red-mobile {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: lighter;
+    font-weight: 50;
+  }
+  @media screen and (min-width: 428px) {
+    .footer .redes .lista-red-mobile {
+      display: none;
+    }
+  }
+  .footer .mas {
+    display: flex;
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+  }
+  .footer .mas .envios {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .mas .parrafo-envios {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 425px) {
+    .footer .mas {
+      display: none;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+
+/*Contacto*/
+
+.contacto-aside{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    padding: 20px 20px;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.titulo-contacto-forms{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 6rem;
+    color: black
+}
+
+.datos-contacto{
+    list-style: none;   
+}
+
+.subtitulo-contacto{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.info-contacto{
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    margin: 20px;
+}
+
+.lista-contacto{
+    list-style: none;
+}
+
+.item-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label {
+    display: block;
+    font: 2rem 'Fira Sans', sans-serif;
+    font-weight: bolder;
+}
+
+input,
+label {
+    margin: .4rem 0;
+}
+
+.mapa{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+/*Fin de Contacto*/
+
+/*Preguntas*/
+
+.grid-preguntas{
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 780px 100px;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
+
+.main-preguntas{
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    background-image: url(../assets/fondo-ceramica.jpg);
+} 
+
+
+.preguntar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/*Con bootstrap*/
+
+.btn-primary{
+    background-color: white;
+    color: black;
+}
+
+.card-link{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+.collapse{
+    font-size: 16px;
+}
+.card-body{
+    font-size: 16px;
+}
+
+/*Fin de preguntas*/
+
+/*Nosotros*/
+
+.grid-nosotros{
+    width: 100%;
+    margin: 0 auto;
+    color: black;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 780px 100px;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+}
+
+.main-nosotros{
+    margin-left: 200px;
+    margin-right: 200px;
+    background-image: url(../assets/fondo-ceramica.jpg);
+}
+/*Fin Nosotros*/
+
+/*Amigos*/
+.links-amigos{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:"quality"
+                        "bosko"
+                        "panda-pop";
+    height: 100%;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+
+.parrafo-amigos{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: poppins;
+    margin-bottom: 60px;
+    background-color: #5cb85c;
+    padding: 5px;
+    width: 50%
+}
+
+/*Fin Amigos/*
+
+/*Animate.css*/
+
+.animate__fadeInDown{
+    --animate-duration: 3s;
+}
+
+.animate__fadeInUp{
+    --animate-duration: 3s;
+}
+
+.animate__zoomIn{
+    --animate-duration: 10s;
+}
+
+.animate__lightSpeedInRight{
+    --animate-duration: 2s;
+}
+/*Fin de animate.css*/
